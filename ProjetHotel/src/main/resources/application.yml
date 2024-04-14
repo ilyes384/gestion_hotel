@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/gestionhotel-db
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method
+
+jwt:
+  secret: 7d11d4bc1551cae6c5a949318c292924eebf0fd9f783c51a83d44746b5148a61
+  expiration: 786000000
